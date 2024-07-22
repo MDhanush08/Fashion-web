@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css    ">
+  <link rel="icon" href="favicon3.png" type="x-icon">  
+
+  <!-- animate .css -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+</head>
+
+<body>
+  <!-- NAv BAr-->
+  <nav class="navbar navbar-expand-lg navbar-dark p-s-sticky" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fashion</a>
+    <!-- mycart -->
+    <div class="mycart">
+      <h1 id="shopping">🛒</h1>
+      <h3 class="cart-count"></h3>
+      </div>
+  <!-- end  mycart -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- <div class="mycart">
+        <h1>🛒</h1>
+        <h3 class="cart-count">0</h3>
+        </div> -->
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+        <button id="signin" class="btn  p-2 my-lg-0 my-2 "> Sign in</button>
+        
+      </div>
+      <!-- <div class="mycart">
+        <h1>🛒</h1>
+        <h3 class="cart-count">0</h3>
+        </div> -->
+      </div>
+  </nav>
+     <div class="container" id="container1">
+     Mycart
+     <span id="close">❌ </span>
+     <ul id="cart-items"></ul>
+     </div>
+
+  <!-- Home-->
+  <nav id="home">
+
+    <div class="container">
+        <h2 class="collection"> Mens Collection</h2>
+        
+          <a  href="#product"><button class="shopnow">Shop Now</button></a>
+       
+        
+        
+    </div>
+      
+   
+  </nav>
+
+  
+
+
+  <!--  ABout  -->
+  <nav id="about">
+    <div class="container-fluid">
+          
+          <h1 class="about_title"> ABOUT US</h1>
+          <p class="about_content"> Lorem ipsum dolors it amet consectetur adipisicing elit.
+            Quod maiores porro, repellat ex vero reiciendis blanditiis,
+            dolore quis provident temporibus, officia enim tempora ea ut
+            repudiandae optio magni ducimus consequuntur?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Modi, voluptatibus enim assumenda ratione odit, veniam id sun
+            t nesciunt ipsa nobis corrupti, molestias
+            totam quod quas laborum dolorum maxime sed! Deserunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Placeat at, deleniti esse voluptatem distinctio volupta
+            tibus quisquam veniam dolore eligendi rerum cumque ipsa corrupti.
+            Doloremque labore enim ab voluptatibus odio possimus?
+          </p>
+        
+    </div>
+  </nav>
+    
+     <nav class="" id="seller">
+      <div class="row" id="can">
+        <div class="seller1 col-12 col-lg-4">
+          <h1  id="display">1</h1>
+          <h4 id="display"> THE BIGGEST SALE EVER</h4>
+          
+        </div>
+
+        <div class="seller2 col-12 col-lg-4">
+          <h1 id="display">2</h1>
+          <h4 id="display"> SHOP WITH CONFIDENCE</h4>
+          
+        </div>
+
+        <div class="seller3 col-12 col-lg-4">
+          <h1 id="display">3</h1>
+          <h4 id="display"> NO LIMITED</h4>
+        </div>
+
+      </div>
+    </nav>
+
+  <!--  Product Section-->
+  <section id="product">
+    <div class="container m-5">
+      <h1 id="producthead" class="text-center my-5" class="bestseller"> BEST SELLER </h1>
+      <div class="row" id="cart1">
+        <!--  img1   -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card" id="card1">
+            
+            <img src="yellowTS.png" class="card-img-top">
+            
+            <div class="card-body text-center">
+              <h5 class="card-title">T-Shirt</h5>
+
+
+              <h5 id="quantity">Quantity</h5>
+              <a id="addcart" class="btn signin"  onclick="addToCart('cart1')">
+                Add To cart</a>
+            </div>
+          </div>
+        </div>
+        <!--   img2 -->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card" id="card2">
+            <img src="hoodie.png" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Hoodie</h5>
+
+              <a id="addcart" class="btn signin" onclick="addToCart('cart2')">
+                Add To cart</a>
+            </div>
+          </div>
+        </div>
+        <!--img 3-->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card" id="card3">
+            <img src="trouser.png" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Shorts</h5>
+
+              <a id="addcart" class="btn signin" onclick="addToCart('cart3')">
+                Add To cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!--img 4-->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card" id="card4">
+            <img src="coat.png" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Black Coat</h5>
+
+              <a id="addcart" class="btn signin" onclick="addToCart('cart4')">
+                Add To cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!--img 5-->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card" id="card5">
+            <img src="Checked shirt.png" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Shirt</h5>
+
+              <a id="addcart" class="btn signin" onclick="addToCart('cart5')">
+                Add To cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!--img 6-->
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card" id="card6">
+            <img src="jean1.png" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">Jeans Pant</h5>
+
+              <a id="addcart" class="btn signin" onclick="addToCart('cart6')">
+                Add To cart</a>
+            </div>
+          </div>
+        </div>
+        <!--   Image over  -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Our services -->
+
+  <div id="services" class="container-fluid">
+
+    <div class="row">
+      <div  id="colu1" class=" colum col-lg-3 col-sm-6">
+        <span>👍 </span>
+        <h5>Timely Delivery</h5>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div  id="colu2" class=" colum col-lg-3 col-sm-6" >
+        <span>  🚚</span>
+        <h5>Free Shipping</h5>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div id="colu3" class="colum col-lg-3 col-sm-6">
+        <span>🕔</span>
+        <h5>24/7 Support</h5>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div  id="colu4" class="colum col-lg-3 col-sm-6">
+        <span>🔐</span>
+        <h5>Secured Payment</h5>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="advantage">
+          <marquee behavior="scroll" direction="" scrollamount="10">
+            <h4>❀ 100% Eco Friendly</h4>
+            <h4>❀ Quality & Confortable</h4>
+            <h4>❀Soft & Breathable </h4>
+            <h4>❀Modern Elegant</h4>
+          </marquee>
+  </div>
+
+
+<!--  End our srvices -->
+
+
+
+
+  <!--      Contact  -->
+  <nav id="contact">
+    <!-- <h1> CONTACT</h1> -->
+    <div class=" container box">
+      <!-- <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <img src="img2.jpg" class="img-fluid">
+        </div> -->
+
+        <div class="col-lg-6 col-md-6 col-12">
+          <h1 class="contact"> CONTACT US</h1>
+          <form class="mb-3 ">
+            <input class="form1" type="text" class="form-control" placeholder="Enter your name">
+            <input class="form2" type="email" class="form-control" placeholder="Enter your email">
+            <textarea class="form3" class="form-control" placeholder="Enter your message"></textarea>
+            <button class="message1" class="btn signin"> Send Message </button>
+          </form>
+        </div>
+    </div>
+  </nav>
+
+
+  <!--  FOOTER-->
+
+  <footer> copyrights @
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="script.js">
+     
+  </script>
+  <!-- j query cdn -->
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"></script>
+
+<!-- way points cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="scripts.js"></script>
+</body>
+
+
+
+</html>
